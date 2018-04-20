@@ -1,0 +1,41 @@
+/* GLOBAL STYLES */
+/*---------------*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #999;
+}
+
+/* MEDIA QUERIES */
+/*---------------*/
+/* Large desktops only (XL) */
+@media (min-width: 1200px) {
+}
+
+/* Tablets, desktops (MD + LG + XL)*/
+@media (min-width: 768px) {
+}
+
+/* Phones in portrait or landscape mode (XS + SM) */
+@media (max-width: 767.98px) {
+}
+
+/* Phones in portrait mode only (XS) */
+@media (max-width: 575.98px) {
+}
