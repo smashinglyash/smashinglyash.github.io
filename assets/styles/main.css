@@ -1,13 +1,14 @@
 /* GLOBAL STYLES */
 /*---------------*/
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 400;
   font-style: normal;
   color: #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Amatic SC', cursive;
   text-transform: uppercase;
   color: #000;
   margin-bottom: 15px;
