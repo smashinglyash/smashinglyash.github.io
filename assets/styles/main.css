@@ -20,12 +20,21 @@ a {
 }
 
 a:hover {
-  color: #C5B358;
+  color: #9279ba;
 }
 
 header {
   /* height: 100vh; <-- make hero image the size of the screen */
   margin-bottom: 75px;
+}
+
+.btn {
+  color: #fff;
+  background-color: #9279ba;
+}
+
+.btn:hover {
+  background-color: #000;
 }
 
 /* NAVIGATION BAR */
@@ -50,7 +59,7 @@ nav a {
 /* HERO */
 /*------*/
 #hero {
-  background-image: url(../images/galaxy.jpg);
+  background-image: url(../images/hero.jpg);
   background-size: cover;
   background-position: center center;
   overflow: hidden;
@@ -94,10 +103,14 @@ blockquote p {
   padding-bottom: 75px;
 }
 
+#gallery img {
+  margin-bottom: 30px;
+}
+
 /* ABOUT */
 /*-------*/
 #about {
-  background-image: url(../images/none-of-this-matters.jpg);
+  background-image: url(../images/ashley.jpg);
   background-size: cover;
   background-position: center center;
   overflow: hidden;
@@ -126,11 +139,6 @@ blockquote p {
 /*---------*/
 #contact {
   padding-top: 75px;
-}
-
-.btn {
-  color: #fff;
-  background-color: #C5B358;
 }
 
 /* FOOTER */
