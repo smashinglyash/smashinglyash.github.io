@@ -4,39 +4,207 @@ body {
   font-family: 'Inconsolata', monospace;
   font-weight: 400;
   font-style: normal;
-  color: #000;
+  color: #555;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Amatic SC', cursive;
-  text-transform: uppercase;
+  font-weight: 700;
   color: #000;
   margin-bottom: 15px;
 }
 
 a {
   color: #000;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: #999;
+  color: #C5B358;
+}
+
+header {
+  /* height: 100vh; <-- make hero image the size of the screen */
+  margin-bottom: 75px;
+}
+
+/* NAVIGATION BAR */
+/*----------------*/
+nav {
+  background-color: #fff;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.75rem;
+}
+
+.navbar-toggler {
+  font-family: 'Inconsolata', monospace;
+}
+
+/* HERO */
+/*------*/
+#hero {
+  background-image: url(../images/galaxy.jpg);
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  color: #fff;
+  padding: 15%;
+  margin-top: 68px; /* <-- remove when hero image is size of screen */
+  /* height: 100%; <-- use for spacing when hero image is size of screen */
+}
+
+.hero-content {
+  /* position: relative;
+  margin: 0 15%;
+  top: 50%;
+  transform: translateY(-50%); <-- use for spacing when hero image is size of screen */
+}
+
+#hero h1 {
+  font-size: 96px;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* INTRO */
+/*-------*/
+blockquote p {
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.blockquote-footer {
+  font-size: 16px;
+  text-align: right;
+  color: #777;
+}
+
+/* GALLERY */
+/*---------*/
+#gallery {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+/* ABOUT */
+/*-------*/
+#about {
+  background-image: url(../images/none-of-this-matters.jpg);
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+#about h1 {
+  color: #fff;
+}
+
+#about p {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+#about p:last-child {
+  margin-bottom: 0;
+}
+
+/* CONTACT */
+/*---------*/
+#contact {
+  padding-top: 75px;
+}
+
+.btn {
+  color: #fff;
+  background-color: #C5B358;
+}
+
+/* FOOTER */
+/*--------*/
+footer {
+  padding-top: 35px;
+  padding-bottom: 10px;
 }
 
 /* MEDIA QUERIES */
 /*---------------*/
-/* Large desktops only (XL) */
-@media (min-width: 1200px) {
-}
-
-/* Tablets, desktops (MD + LG + XL)*/
-@media (min-width: 768px) {
-}
-
-/* Phones in portrait or landscape mode (XS + SM) */
-@media (max-width: 767.98px) {
-}
-
-/* Phones in portrait mode only (XS) */
+/* Extra small devices (portrait phones) */
 @media (max-width: 575.98px) {
+  header {
+    margin-bottom: 25px;
+  }
+  #hero {
+    margin-top: 98px; /* <-- remove when hero image is size of screen */
+  }
+  #hero h1 {
+    font-size: 42px;
+  }
+  #gallery {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  #contact {
+    padding-top: 25px;
+  }
+  blockquote p {
+    font-size: 16px;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    margin-bottom: 35px;
+  }
+  #hero h1 {
+    font-size: 54px;
+  }
+  #gallery {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  #contact {
+    padding-top: 35px;
+  }
+  blockquote p {
+    font-size: 22px;
+  }
+}
+
+/* Medium devices (tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header {
+    margin-bottom: 50px;
+  }
+  #hero h1 {
+    font-size: 72px;
+  }
+  #gallery {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #contact {
+    padding-top: 50px;
+  }
+}
+
+/* Large and extra large devices (laptops, desktops, large desktops) */
+@media (min-width: 992px) {
+  .hero-content {
+    /* margin: 68px 15% 0 15%; <-- use for spacing when hero image is size of screen */
+  }
 }
