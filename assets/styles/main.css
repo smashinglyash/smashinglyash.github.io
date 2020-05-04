@@ -108,7 +108,7 @@ blockquote p {
 /* ABOUT */
 /*-------*/
 #about {
-  background-image: url(../images/ashley.jpg);
+  background-image: url(../images/about.jpg);
   background-size: cover;
   background-position: center center;
   overflow: hidden;
